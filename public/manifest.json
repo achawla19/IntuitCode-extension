@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "IntuitCode",
+  "version": "1.0",
+  "description": "Voice-first AI interviewer — explain your intuition before you code",
+  "host_permissions": ["https://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  }
+}
